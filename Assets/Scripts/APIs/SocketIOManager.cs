@@ -711,7 +711,7 @@ public class FreeSpins
     public bool isFreeSpin { get; set; }
 }
 
-[SerializeField]
+[Serializable]
 public class Bonus
 {
     public bool istriggered { get; set; }
