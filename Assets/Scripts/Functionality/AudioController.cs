@@ -52,23 +52,35 @@ public class AudioController : MonoBehaviour
     }
 
 
-    //COMPLETED:unpausing the audio on foucus not newly playing
+    private bool isForceMuted = false;
+    private readonly Dictionary<AudioSource, bool> preFocusMuteState = new Dictionary<AudioSource, bool>();
+
+    private List<AudioSource> AllSources => new List<AudioSource> { bg_adudio, audioPlayer_wl, audioPlayer_button, audioPlayer_Spin };
+
+    // Focus-driven — called from BOTH UIManager.OnFocusChanged (JS bridge) and OnApplicationFocus below.
+    internal void SetMuteAll(bool forceMute)
+    {
+        if (forceMute == isForceMuted) return;
+        isForceMuted = forceMute;
+
+        foreach (var source in AllSources)
+        {
+            if (source == null) continue;
+            if (forceMute)
+            {
+                preFocusMuteState[source] = source.mute;
+                source.mute = true;
+            }
+            else
+            {
+                source.mute = preFocusMuteState.TryGetValue(source, out bool prevMuted) ? prevMuted : source.mute;
+            }
+        }
+    }
+
     private void OnApplicationFocus(bool focus)
     {
-        if (!focus)
-        {
-
-            bg_adudio.Pause();
-            audioPlayer_wl.Pause();
-            audioPlayer_button.Pause();
-        }
-        else
-        {
-            if (!bg_adudio.mute) bg_adudio.UnPause();
-            if (!audioPlayer_wl.mute) audioPlayer_wl.UnPause();
-            if (!audioPlayer_button.mute) audioPlayer_button.UnPause();
-
-        }
+        SetMuteAll(!focus);
     }
 
     internal void PlaySpinBonusAudio(string type = "spin")
@@ -160,6 +172,7 @@ public class AudioController : MonoBehaviour
 
     internal void ToggleMute(bool toggle, string type = "all")
     {
+        isForceMuted = false; // explicit user interaction always wins over a stale focus-mute
 
         switch (type)
         {

@@ -619,6 +619,13 @@ public class SlotBehaviour : MonoBehaviour
         }
     }
 
+    internal void UpdateBalanceDisplay(double newBalance)
+    {
+        currentbalance = newBalance;
+        if (balance_text) balance_text.text = currentbalance.ToString("f3");
+        Comparebalance();
+    }
+
     private void Comparebalance()
     {
         if (currentbalance < currentTotalBet)
