@@ -4353,7 +4353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 259}
+  m_AnchoredPosition: {x: 0, y: 240}
   m_SizeDelta: {x: 712.06, y: 168.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284665617
@@ -4376,7 +4376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Connection Error
+  m_text: DISCONNECTED
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
   m_sharedMaterial: {fileID: -5180052559723246064, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
@@ -4426,7 +4426,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -9500,8 +9500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 591.97, y: 208.76}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 824.59, y: 208.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &641688767
 MonoBehaviour:
@@ -9523,7 +9523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reconnecting.....
+  m_text: Trying to reconnect....
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
   m_sharedMaterial: {fileID: -5180052559723246064, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
@@ -9558,7 +9558,7 @@ MonoBehaviour:
   m_fontSizeMax: 65
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -9573,7 +9573,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -25220,7 +25220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 259}
+  m_AnchoredPosition: {x: 0, y: 240}
   m_SizeDelta: {x: 712.06, y: 168.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1713264089
@@ -25243,7 +25243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Connection Error
+  m_text: CONNECTION LOST
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
   m_sharedMaterial: {fileID: -5180052559723246064, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
@@ -25293,7 +25293,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -32375,8 +32375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 6}
-  m_SizeDelta: {x: 591.97, y: 208.76}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 803.45, y: 208.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2117478479
 MonoBehaviour:
@@ -32398,7 +32398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unable to connect to the server
+  m_text: Please restart the game.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
   m_sharedMaterial: {fileID: -5180052559723246064, guid: d9b190a9454c24d95a59fb703e131a6c, type: 2}
@@ -32448,7 +32448,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
